@@ -1,0 +1,11 @@
+#!/bin/bash
+
+input=$1
+
+jupyter nbconvert ${input}.ipynb \
+   --to slides --SlidesExporter.reveal_theme=serif  \
+   --SlidesExporter.reveal_scroll=True \
+   --SlidesExporter.reveal_transition=none \
+   --reveal-prefix reveal.js
+
+
