@@ -8,4 +8,7 @@ jupyter nbconvert ${input}.ipynb \
    --SlidesExporter.reveal_transition=none \
    --reveal-prefix reveal.js
 
+# https://medium.com/learning-machine-learning/present-your-data-science-projects-with-jupyter-slides-75f20735eb0f
+
+mv ${input}.slides.html ${input}.html
 
