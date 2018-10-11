@@ -42,7 +42,7 @@ input('What is your name? ')
 
 # In[3]:
 
-
+from IPython import get_ipython
 get_ipython().system('python myscript.py')
 
 
