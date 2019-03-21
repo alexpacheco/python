@@ -11,6 +11,108 @@
 # 
 # ### Research Computing
 
+# ## What is Python?
+# 
+# 
+#  - A general-purpose programming language (1980) by Guido van Rossum
+#  - Intuitive and minimal coding
+#  - Dynamically typed
+#  - Automatic memory management
+#  - Interpreted not compiled
+#  - Free (developed under an OSI-approved open-source license) and portable
+# 
+
+# ## What can Python do?
+# 
+#  - web development (server-side),
+#  - system scripting,
+#  - connecting to database systems and to read and modify files,
+#  - handle big data and perform complex mathematics,
+#  - rapid prototyping, or for production-ready software development.
+
+# ## Why Python?
+# 
+#  - works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+#  - has a simple syntax similar to the English language.
+#  - has syntax that allows developers to write programs with fewer lines than some other programming languages.
+#  - runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.
+#  - can be treated in a procedural way, an object-orientated way or a functional way.
+#  - The most recent major version of Python is Python 3
+#      - However, Python 2, although not being updated with anything other than security updates, is still quite popular.
+# 
+
+# ## Good to know
+# 
+#  - The most recent major version of Python is Python 3, which we shall be using in this tutorial. 
+#      - However, Python 2, although not being updated with anything other than security updates, is still quite popular.
+#  - In this tutorial Python will be written in a text editor. It is possible to write Python in an Integrated Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when managing larger collections of Python files.
+# 
+# 
+# 
+
+# ## Python Syntax compared to other programming languages
+# 
+#  - Python was designed  for readability, and has some similarities to the English language with influence from mathematics.
+#  - Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.
+#  - Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes.   
+#  - Other programming languages often use curly-brackets for this purpose.
+
+# ##  Installing Python
+# 
+# 
+#  - Many PCs and Macs will have python already installed.
+#  - To check if you have python installed:
+#     - Open Command Line (cmd.exe) on Windows
+#     - Open Terminal on Linux or Mac
+#  - and run the following command
+#     - <code>python --version</code>
+
+# If you find that you do not have python installed on your computer, then you can download it for free from the following website: https://www.python.org/
+
+# ### Installing from Source
+# 
+#  - Python is a free and open source software that can downloaded and installed from https://www.python.org/downloads/
+#  - Latest stable release for Python 3 is 3.7.0 
+#  - A large majority of users still use the older version Python 2.
+#  - Python 2 is scheduled for *end-of-life* on Jan 1, 2020 and migrating to Python 3 is strongly recommended.
+
+# ###  Anaconda Python Distribution
+# 
+#  -  [Anaconda Python distribution](https://www.anaconda.com/distribution/) is the most popular platform for Python
+#  -  It provides 
+#      - a convenient install procedure for over 1400 Data Science libraries for Python and R
+#      - conda to manage your packages, dependencies, and environments
+#      - anaconda navigator: a desktop portal to install and launch applications and editors including Jupyter, RStudio, Visual Studio Code, and Spyder
+#      
+#  - Visit https://go.lehigh.edu/linux to use Anaconda (and other Linux software) installed and maintained by the Research Computing group on your local Linux laptop or workstation
+# 
+
+# ## Using Python
+# 
+# - launch python by typing python on the \*nix command line or cmd.exe in windows
+# <img src="pythonshell.png" width="80%"> 
+
+#  - If you have installed Anaconda Python, then you can launch IPython, an enhanced python shell, from the command line
+#  ![IPython Shell](ipythonshell.png)
+
+# - Open Anaconda Navigator to launch
+#     - Jupyter QtConsole
+#     - Spyder, an open source IDE for python (Available on LUapps)
+#     - Jupyter (formely IPython) notebooks 
+#     - Jupyter Lab (formerly Jupyter Hub)
+# 
+# <img src="anaconda-navigator.png" width="60%">    
+
+# ## Which one to use?
+# 
+# - You should choose one that suits your need
+#   - Python Shell, IPython or QtConsole: for interactive use when you do not want to save your work
+#   - Spyder or other IDE's such as PyCharm: for writing scripts that you want to save for later reuse
+#   - Jupyter Lab or Notebooks: for writing scripts and workflows that you can share with others, ideal for reproducible research or data reporting
+#       - This presentation is written in Jupyter Notebook  
+#            - Provides magic commands like ! and %% to provide access to \*nix commands.
+#  - Use an editor such as vi/vim, emacs, Notepad++ etc to write a python script and execute as a batch script.
+#  
 
 # ### Printing to screen
 # 
@@ -42,7 +144,7 @@ input('What is your name? ')
 
 # In[3]:
 
-from IPython import get_ipython
+
 get_ipython().system('python myscript.py')
 
 
@@ -137,7 +239,55 @@ class = 'Advanced Theoretical Zymurgy'
 # 
 # - Python has 31 keywords or reserved words that cannot be used for variable names.
 
-
+# <table>
+# <tbody>
+# <tr>
+# <td>and</td>
+# <td>del</td>
+# <td>for</td>
+# <td>is</td>
+# <td>raise</td>
+# </tr>
+# <tr>
+# <td>as</td>
+# <td>elif</td>
+# <td>from</td>
+# <td>lambda</td>
+# <td>return</td>
+# </tr>
+# <tr>
+# <td>assert</td>
+# <td>else</td>
+# <td>global</td>
+# <td>not</td>
+# <td>try</td>
+# </tr>
+# <tr>
+# <td>break</td>
+# <td>except</td>
+# <td>if</td>
+# <td>or</td>
+# <td>while</td>
+# </tr>
+# <tr>
+# <td>class</td>
+# <td>exec</td>
+# <td>import</td>
+# <td>pass</td>
+# <td>with</td>
+# </tr>
+# <tr>
+# <td>continue</td>
+# <td>finally</td>
+# <td>in</td>
+# <td>print</td>
+# <td>yield</td>
+# </tr>
+# <tr>
+# <td>def</td>
+# </tr>
+# </tbody>
+# </table>
 
 # - Use an editor that has syntax highlighting, wherein python functions have a different color 
 #    - See previous slides, variable names are in the normal color i.e. black while reserved keywords, for e.g. *class*, are in green
@@ -163,7 +313,21 @@ print(x)
 # 
 # Python has 5 Data types
 # 
-
+# <ol>
+#   <li> Numbers
+#   <ol>
+#      <li> Integers</li>
+#      <li> Floating Point Numbers</li> 
+#      <li> Complex Numbers</li>
+#   </ol></li>
+# <li> Strings</li>
+# <li> Lists</li>
+# <li> Dictionaries</li>
+# <li> Tuples</li>
+# <li> Boolean</li>
+# </ol>
+# 
+# 
 
 # ### Integers
 # 
@@ -389,7 +553,19 @@ print('This string contains a single quote (\') character.')
 print("This string contains a double quote (\") character.")
 
 
-
+# - Escape sequences
+# 
+# | Escape Sequence | Escaped Interpretation |
+# |-----------------|------------------------|
+# | \' | Literal single quote (') character |
+# | \" | Literal double quote (") character |
+# | \newline | Newline is ignored |
+# | \\\ | Literal backslash (\) character |
+# | \n | ASCII Linefeed (LF) character |
+# | \r | ASCII Carriage Return (CR) character |
+# | \t | ASCII Horizontal Tab (TAB) character |
+# | \v | ASCII Vertical Tab (VT) character |
+# 
 
 # #### Interactive Python - User Input
 # 
@@ -460,7 +636,17 @@ print("Max number of decimals %e" % pow(2,53))
 
 # ### Arithmetic Operators
 # 
-
+# | Operator | Meaning | Example |
+# |----------|---------|---------|
+# | + (unary) | Unary Positive | 	+a |
+# | + (binary) | Addition | a + b | 
+# | - (unary) | Unary Negation | 	-a |
+# | - (binary) | Subtraction | a - b |
+# | * | Multiplication | a * b |
+# | / | Division | a / b |
+# | %	| Modulus | a % b |
+# | //| Floor Division (also called Integer Divison | a // b |
+# | ** | Exponentiation | a ** b |
 
 # In[47]:
 
@@ -560,7 +746,11 @@ s[:]
 
 # #### String functions
 # 
-
+# - _ord()_: returns the ASCII code of the character.
+# - _chr()_: function returns character represented by a ASCII number.
+# - _len()_: returns length of the string
+# - _max()_: returns character having highest ASCII value
+# - _min()_: returns character having lowest ASCII value
 
 # In[58]:
 
@@ -573,6 +763,14 @@ len(s)
 # - Can be used for both numbers and strings
 # - Python compares string lexicographically i.e using ASCII value of the characters
 
+# | Operator | Meaning | Example |
+# |----------|---------|---------|
+# | == | Equal to | a == b |
+# | != | Not equal to | a != b |
+# | < | Less than | a < b |
+# | <= |Less than or equal to | a <= b |
+# | >	 | Greater than | a > b |
+# | >= | Greater than or equal to | a >= b |
 
 # In[59]:
 
@@ -604,7 +802,11 @@ print(ord('H'),ord('h'),ord('i'))
 
 # ### Logical Operators
 
-
+# | Operator | Example | Meaning |
+# |----------|---------|---------|
+# | not | not x | True if x is False<br>False if x is True<br>(Logically reverses the sense of x) |
+# | or | x or y | True if either x or y is True<br>False otherwise |
+# | and | x and y | True if both x and y are True<br>False otherwise | 
 
 # In[62]:
 
@@ -644,7 +846,42 @@ print(x)
 # - It is common to say that a function "takes" an argument and "returns" a result. 
 # - The result is called the **return value**.
 
+# ### Built-in Type Conversion Functions
+# 
+# | Function	| Description |
+# |-----------|-------------|
+# | ascii()	| Returns a string containing a printable representation of an object |
+# | bin()	| Converts an integer to a binary string |
+# | bool()	| Converts an argument to a Boolean value |
+# | callable() | Returns whether the object is callable (i.e., some kind of function)
+# | chr()	| Returns string representation of character given by integer argument |
+# | complex()	| Returns a complex number constructed from arguments |
+# | float()	| Returns a floating-point object constructed from a number or string |
+# | hex()	| Converts an integer to a hexadecimal string |
+# | int()	| Returns an integer object constructed from a number or string |
+# | oct()	| Converts an integer to an octal string |
+# | ord()	| Returns integer representation of a character |
+# | repr()	| Returns a string containing a printable representation of an object |
+# | str()	| Returns a string version of an object |
+# | type()	| Returns the type of an object or creates a new type object |
 
+# 
+# ### Math
+# 
+# - Python has a math module that provides most of the familiar mathematical functions
+# 
+# | Function | Description |
+# |----------|-------------|
+# | abs()	| Returns absolute value of a number |
+# | divmod()	| Returns quotient and remainder of integer division |
+# | max()	| Returns the largest of the given arguments or items in an iterable |
+# | min()	| Returns the smallest of the given arguments or items in an iterable |
+# | pow()	| Raises a number to a power |
+# | round()	| Rounds a floating-point value |
+# | sum()	| Sums the items of an iterable |
+# 
+# - A **module** is a file that contains a collection of related functions
+# - Before we can use the module, we have to import it
 
 # In[66]:
 
@@ -677,6 +914,33 @@ math.sin(radians)
 
 # ### Iterables and Iterators
 # 
+# | Function	| Description |
+# |-----------|-------------|
+# | all() | Returns True if all elements of an iterable are true |
+# | any() | Returns True if any elements of an iterable are true |
+# | enumerate() | Returns a list of tuples containing indices and values from an iterable |
+# | filter() | Filters elements from an iterable |
+# | iter() | Returns an iterator object |
+# | len() | Returns the length of an object |
+# | map() | Applies a function to every item of an iterable |
+# | next() | Retrieves the next item from an iterator |
+# | range() | Generates a range of integer values |
+# | reversed() | Returns a reverse iterator |
+# | slice() | Returns a slice object |
+# | sorted() | Returns a sorted list from an iterable |
+# | zip() | Creates an iterator that aggregates elements from iterables |
+
+# ## User Defined Functions
+# 
+# - Python allows programmers to define their OWN **function**
+# - A **function definition** specifies the name of a new function and the sequence of statements that execute when the function is called.
+# 
+# ### Why create your own functions?
+# 
+# - Creating a new function gives you an opportunity to name a group of statements, which makes your program easier to read and debug.
+# - Functions can make a program smaller by eliminating repetitive code. Later, if you make a change, you only have to make it in one place.
+# - Dividing a long program into functions allows you to debug the parts one at a time and then assemble them into a working whole.
+# - Well-designed functions are often useful for many programs. Once you write and debug one, you can reuse it.
 
 # In[69]:
 
@@ -708,6 +972,8 @@ print(tempf)
 
 # - **Conditional Statements** gives the programmer an ability to check conditions and change the behavior of the program accordingly.
 # - The simplest form is the if statement:
+# 
+# <img src="https://www.tutorialspoint.com/python/images/decision_making.jpg" alt="Image Not Found" onerror="this.onerror=null;this.src='decision_making.jpg';" width="30%" />
 
 # Syntax:
 # <code>
@@ -715,6 +981,19 @@ print(tempf)
 #     statements
 # </code>
 
+# - The boolean expression after the *if* statement is called the **condition**. 
+#    - If it is true, then the indented statement gets executed. 
+#    - If not, nothing happens.
+# 
+# - _if_ statements have the same structure as function definitions: 
+#    * a header followed by an indented block. 
+#    * Statements like this are called **compound statements**.
+# 
+# 
+
+# - There is no limit on the number of statements that can appear in the body, but there has to be at least one. 
+# - Occasionally, it is useful to have a body with no statements (usually as a place keeper for code you haven't written yet). 
+# - In that case, you can use the _pass_ statement, which does nothing.
 
 # In[72]:
 
@@ -743,6 +1022,9 @@ else:
     print('x is odd')
 
 
+# - If the remainder when x is divided by 2 is 0, then we know that x is even, and the program displays a message to that effect. 
+# - If the condition is false, the second set of statements is executed. 
+# - Since the condition must be true or false, exactly one of the alternatives will be executed. - The alternatives are called __branches__, because they are branches in the flow of execution.
 
 # 
 # - Sometimes there are more than two possibilities and we need more than two branches.
@@ -884,6 +1166,8 @@ double_fact(10)
 # - There may be a situation when you need to execute a block of code a number of times.
 # 
 # - A loop statement allows us to execute a statement or group of statements multiple times.
+# 
+# <img src="https://www.tutorialspoint.com/python/images/loop_architecture.jpg" alt="Image Not Found" onerror="this.onerror=null;this.src='loop_architecture.jpg';" width="30%" />
 
 # ### for loops
 # 
@@ -918,7 +1202,7 @@ for fruit in fruits:
 # In[85]:
 
 
-fruits = ['banana', 'apple',  'mango']
+fruits = [0,1,2,3,4]
 for index in range(len(fruits)):
    print ('Current fruit :', fruits[index])
 
@@ -1049,14 +1333,14 @@ print(c)
 
 
 numbers = [17, 123]
-print(numbers)
+print(numbers,id(numbers))
 
 
 # In[96]:
 
 
 numbers[0] = 5
-print(numbers)
+print(numbers,id(numbers))
 
 
 # - A list can be traversed using a *for* loop 
@@ -1369,7 +1653,7 @@ print(t[1])
 # In[128]:
 
 
-print(t[1:],id(t))
+print(t[1:])
 
 
 # - Unlike *lists*, *tuples* are immutable
@@ -1385,6 +1669,7 @@ t[0] = 'A'
 # In[130]:
 
 
+print(t,id(t))
 t = ('A',) + t[1:]
 print(t,id(t))
 

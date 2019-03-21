@@ -12227,6 +12227,7 @@ print("Hello There!")
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Hello There!
+1
 </pre>
 </div>
 </div>
@@ -12284,6 +12285,10 @@ print("Hello There!")
 
 print(&#34;Hello There!&#34;)
 
+x = 1
+print(x)
+
+
 </pre>
 </div>
 </div>
@@ -12317,6 +12322,7 @@ chmod +x myscript.py
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Hello There!
+1
 </pre>
 </div>
 </div>
@@ -14364,7 +14370,7 @@ Max number of decimals 9.007199e+15
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>4589991504 4589991504
+<pre>4501329544 4501329544
 </pre>
 </div>
 </div>
@@ -14408,7 +14414,7 @@ Max number of decimals 9.007199e+15
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Hello, Welcome to LTS Seminars 4590054976 4589991504
+<pre>Hello, Welcome to LTS Seminars 4501857744 4501329544
 </pre>
 </div>
 </div>
@@ -15452,8 +15458,8 @@ True
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Enter Temperature in Celcius: 20
- 20.00 C =  68.00 F
+<pre>Enter Temperature in Celcius: 15
+ 15.00 C =  59.00 F
 </pre>
 </div>
 </div>
@@ -16162,7 +16168,7 @@ Current fruit : mango
 <div class="prompt input_prompt">In&nbsp;[85]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">,</span>  <span class="s1">&#39;mango&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">fruits</span><span class="p">)):</span>
    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Current fruit :&#39;</span><span class="p">,</span> <span class="n">fruits</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
 </pre></div>
@@ -16181,9 +16187,11 @@ Current fruit : mango
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Current fruit : banana
-Current fruit : apple
-Current fruit : mango
+<pre>Current fruit : 0
+Current fruit : 1
+Current fruit : 2
+Current fruit : 3
+Current fruit : 4
 </pre>
 </div>
 </div>
@@ -16351,8 +16359,8 @@ while expression:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Enter any integer: 10
-Factorial of 10 is 3628800
+<pre>Enter any integer: 15
+Factorial of 15 is 1307674368000
 </pre>
 </div>
 </div>
@@ -16619,7 +16627,7 @@ print('Factorial of %d is %d' % (number, fact))
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">17</span><span class="p">,</span> <span class="mi">123</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">,</span><span class="nb">id</span><span class="p">(</span><span class="n">numbers</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -16636,7 +16644,7 @@ print('Factorial of %d is %d' % (number, fact))
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[17, 123]
+<pre>[17, 123] 4501248968
 </pre>
 </div>
 </div>
@@ -16651,7 +16659,7 @@ print('Factorial of %d is %d' % (number, fact))
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">,</span><span class="nb">id</span><span class="p">(</span><span class="n">numbers</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -16668,7 +16676,7 @@ print('Factorial of %d is %d' % (number, fact))
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[5, 123]
+<pre>[5, 123] 4501248968
 </pre>
 </div>
 </div>
@@ -18013,7 +18021,7 @@ tres
 <div class="prompt input_prompt">In&nbsp;[128]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span><span class="nb">id</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
 </pre></div>
 
 </div>
@@ -18030,7 +18038,7 @@ tres
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(&#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;) 4589875624
+<pre>(&#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;)
 </pre>
 </div>
 </div>
@@ -18102,7 +18110,8 @@ tres
 <div class="prompt input_prompt">In&nbsp;[130]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">,)</span> <span class="o">+</span> <span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="nb">id</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
+<span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">,)</span> <span class="o">+</span> <span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="nb">id</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
 </pre></div>
 
@@ -18120,7 +18129,8 @@ tres
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(&#39;A&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;) 4589878792
+<pre>(&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;) 4500930056
+(&#39;A&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;) 4500427704
 </pre>
 </div>
 </div>
@@ -18620,7 +18630,7 @@ the emblem of our land.
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;#!/usr/bin/env python\n\nprint(&#34;Hello There!&#34;)\n\n&#39;</pre>
+<pre>&#39;#!/usr/bin/env python\n\nprint(&#34;Hello There!&#34;)\n\nx = 1\nprint(x)\n\n\n&#39;</pre>
 </div>
 
 </div>
@@ -18678,7 +18688,14 @@ the emblem of our land.
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&#39;#!/usr/bin/env python\n&#39;, &#39;\n&#39;, &#39;print(&#34;Hello There!&#34;)\n&#39;, &#39;\n&#39;]</pre>
+<pre>[&#39;#!/usr/bin/env python\n&#39;,
+ &#39;\n&#39;,
+ &#39;print(&#34;Hello There!&#34;)\n&#39;,
+ &#39;\n&#39;,
+ &#39;x = 1\n&#39;,
+ &#39;print(x)\n&#39;,
+ &#39;\n&#39;,
+ &#39;\n&#39;]</pre>
 </div>
 
 </div>
@@ -18802,6 +18819,14 @@ print(&#34;Hello There!&#34;)
 
 
 
+x = 1
+
+print(x)
+
+
+
+
+
 </pre>
 </div>
 </div>
@@ -18892,8 +18917,8 @@ print(&#34;Hello There!&#34;)
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Enter Temperature in Celcius: 25
- 25.00 C =  77.00 F
+<pre>Enter Temperature in Celcius: 20
+ 20.00 C =  68.00 F
 </pre>
 </div>
 </div>
@@ -20075,8 +20100,8 @@ Numpy A. B =  [[5 4]
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[0.5761984 , 0.04951635, 0.860591  ],
-       [0.71294803, 0.39809022, 0.10763974]])</pre>
+<pre>array([[0.62609962, 0.65967989, 0.87466078],
+       [0.44868521, 0.35713702, 0.12955431]])</pre>
 </div>
 
 </div>
