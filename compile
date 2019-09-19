@@ -4,14 +4,14 @@ input=$1
 
 if [[ $# -gt 1 ]]; then
   theme=$2
-  if [[ $# -eq 2 ]]; then
-    trans=$2
+  if [[ $# -gt 2 ]]; then
+    trans=$3
   else
     trans=slide
   fi
 else
   theme=serif
-  trans=slide
+  trans=cube
 fi
 
 jupyter nbconvert ${input}.ipynb \
